@@ -32,7 +32,7 @@ var (
 	rxNegative             = regexp.MustCompile(`(?is)hidden|^hid$| hid$| hid |^hid |banner|combx|comment|com-|contact|foot|footer|footnote|masthead|media|meta|outbrain|promo|related|scroll|share|shoutbox|sidebar|skyscraper|sponsor|shopping|tags|tool|widget|gm-content`)
 	rxPIsSentence          = regexp.MustCompile(`(?is)\.( |$)`)
 	rxVideos               = regexp.MustCompile(`(?is)//(www\.)?(dailymotion|youtube|youtube-nocookie|player\.vimeo)\.com`)
-	rxKillBreaks           = regexp.MustCompile(`(?is)(<br\s*/?>(\s|&nbsp;?)*)+`)
+	rxKillBreaks           = regexp.MustCompile(`(?is)(<br\s*/?>(&nbsp;?)*)+`)
 	rxComments             = regexp.MustCompile(`(?is)<!--[^>]+-->`)
 )
 

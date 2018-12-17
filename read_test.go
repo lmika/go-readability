@@ -18,6 +18,7 @@ func BenchmarkReadability(b *testing.B) {
 		"https://www.theatlantic.com/business/archive/2018/01/german-board-games-catan/550826/?single_page=true",
 		"http://www.weeklystandard.com/the-anti-bamboozler/article/2011032",
 		"http://www.inquiriesjournal.com/articles/1657/the-impact-of-listening-to-music-on-cognitive-performance",
+		"https://blog.gopheracademy.com/advent-2018/gpython/",
 	}
 
 	for _, url := range urls {
