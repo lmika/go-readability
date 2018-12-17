@@ -5,6 +5,7 @@ import (
 	"fmt"
 	ghtml "html"
 	"io"
+	"log"
 	"math"
 	"net/http"
 	nurl "net/url"
@@ -997,7 +998,8 @@ func getHTMLContent(articleContent *goquery.Selection) string {
 	html = ghtml.UnescapeString(html)
 	html = rxComments.ReplaceAllString(html, "")
 	html = rxKillBreaks.ReplaceAllString(html, "<br />")
-	html = rxSpaces.ReplaceAllString(html, " ")
+	//html = rxSpaces.ReplaceAllString(html, " ")
+	log.Println(html)
 	return html
 }
 
